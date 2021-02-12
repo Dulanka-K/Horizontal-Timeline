@@ -1,0 +1,80 @@
+.timeline-wrapper {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  height: 300px;
+}
+
+.timeline-wrapper .middle-line {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #d9d9d9;
+}
+
+.box {
+  width: 17%;
+  position: relative;
+  min-height: 300px;
+  float: right;
+}
+
+.box .date {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #fff;
+  border: 2px solid #d9d9d9;
+}
+
+.date p {
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
+.box .box-content {
+  border-radius: 5px;
+  background-color: #00b0bd;
+  width: 180px;
+  position: absolute;
+  left: -77px;
+  padding: 15px;
+}
+
+.box-content p {
+  margin: 0;
+  color: white;
+}
+
+.box-bottom .box-content {
+  top: 65%;
+}
+
+.box-content::before {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+}
+
+.box-bottom .box-content::before {
+  border-bottom-color: #00b0bd;
+  top: -20px;
+}
+
+.box-top .box-content::before {
+  border-top-color: #00b0bd;
+  bottom: -20px;
+}
+
+p {
+  font-family: 'Trebuchet MS', sans-serif;
+}
